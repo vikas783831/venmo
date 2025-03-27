@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-  <!-- Event snippet for Page view conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-16937409653/vPuVCOOG1q8aEPW4sYw_'});
-</script>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16937409653"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16937409653');
-</script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venmo Tutorial Hub | Ultimate Guide to Digital Payments</title>
+    <title>Venmo Support | Official Help Center</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -31,7 +13,7 @@
             --venmo-light: #F5F7FA;
             --venmo-green: #22C35E;
             --text-gray: #333;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         * {
@@ -44,7 +26,6 @@
             font-family: 'Inter', sans-serif;
             color: var(--text-gray);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         .container {
@@ -134,27 +115,72 @@
             animation: fadeInUp 1s ease;
         }
 
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: var(--venmo-blue);
-            padding: 15px 40px;
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px 20px;
             border-radius: 50px;
+            border: none;
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: var(--venmo-blue);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-bar button:hover {
+            background: var(--venmo-dark);
+        }
+
+        /* Call Support Section */
+        .call-support {
+            padding: 40px 0;
+            background: var(--venmo-light);
+            text-align: center;
+        }
+
+        .call-support h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--venmo-dark);
+        }
+
+        .call-support p {
+            margin-bottom: 20px;
+            color: var(--text-gray);
+        }
+
+        .call-support a {
+            display: inline-block;
+            background: var(--venmo-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            animation: pulse 2s infinite;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
         }
 
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        .call-support a:hover {
+            background: var(--venmo-dark);
         }
 
-        /* Features Section */
-        .features {
+        /* Quick Help Section */
+        .quick-help {
             padding: 80px 0;
             background: white;
         }
@@ -183,13 +209,13 @@
             border-radius: 2px;
         }
 
-        .features-grid {
+        .help-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
 
-        .feature-card {
+        .help-card {
             background: var(--venmo-light);
             border-radius: 15px;
             padding: 30px;
@@ -198,235 +224,66 @@
             box-shadow: var(--shadow);
         }
 
-        .feature-card:hover {
+        .help-card:hover {
             transform: translateY(-10px);
         }
 
-        .feature-icon {
+        .help-icon {
             font-size: 3rem;
             color: var(--venmo-blue);
             margin-bottom: 20px;
         }
 
-        .feature-card h3 {
+        .help-card h3 {
             margin-bottom: 15px;
             color: var(--venmo-dark);
         }
 
-        /* Video Carousel */
-        .video-section {
+        /* Popular Topics */
+        .topics {
             padding: 80px 0;
             background: var(--venmo-light);
         }
 
-        .carousel {
-            position: relative;
-            max-width: 100%;
-            margin: 0 auto;
-            overflow: hidden;
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .video-card {
-            min-width: 100%;
-            padding: 0 15px;
-            box-sizing: border-box;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .video-info {
-            padding: 20px;
+        .topic-card {
             background: white;
-            border-radius: 0 0 15px 15px;
-            box-shadow: var(--shadow);
-        }
-
-        .video-info h3 {
-            margin-bottom: 10px;
-            color: var(--venmo-dark);
-        }
-
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.7);
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            z-index: 10;
-            transition: all 0.3s;
-        }
-
-        .carousel-control:hover {
-            background: var(--venmo-blue);
-            color: white;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        .carousel-indicators {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ccc;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .indicator.active {
-            background: var(--venmo-blue);
-        }
-
-        /* Guides Section */
-        .guides {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .guide-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            margin-bottom: 30px;
-            transition: transform 0.3s;
-        }
-
-        .guide-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .guide-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .guide-content {
-            padding: 25px;
-        }
-
-        .guide-content h3 {
-            margin-bottom: 15px;
-            color: var(--venmo-dark);
-        }
-
-        .guide-steps {
-            margin-top: 15px;
-        }
-
-        .step {
-            display: flex;
-            margin-bottom: 15px;
-        }
-
-        .step-number {
-            background: var(--venmo-blue);
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 80px 0;
-            background: var(--venmo-light);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            margin-bottom: 15px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
-        }
-
-        .faq-question {
-            width: 100%;
-            text-align: left;
-            background: white;
-            border: none;
-            padding: 20px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: #f0f8ff;
-        }
-
-        .faq-question i {
             transition: transform 0.3s;
         }
 
-        .faq-question.active i {
-            transform: rotate(180deg);
+        .topic-card:hover {
+            transform: translateY(-5px);
         }
 
-        .faq-answer {
-            padding: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            background: white;
+        .topic-content {
+            padding: 25px;
         }
 
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
+        .topic-content h3 {
+            margin-bottom: 15px;
+            color: var(--venmo-dark);
+        }
+
+        .topic-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--venmo-blue);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .topic-link:hover {
+            color: var(--venmo-dark);
+            text-decoration: underline;
         }
 
         /* Contact Section */
@@ -563,18 +420,6 @@
             }
         }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -589,7 +434,7 @@
                 display: none;
             }
             
-            .features-grid {
+            .help-grid, .topics-grid, .contact-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -602,14 +447,13 @@
             <nav>
                 <div class="logo">
                     <i class="fas fa-money-bill-wave"></i>
-                    <span>Venmo Hub</span>
+                    <span>Venmo Support</span>
                 </div>
                 <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#videos">Tutorials</a>
-                    <a href="#guides">Guides</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#quick-help">Quick Help</a>
+                    <a href="#topics">Popular Topics</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="https://venmo.com" target="_blank">Back to Venmo</a>
                 </div>
             </nav>
         </div>
@@ -618,279 +462,21 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Master Venmo Like Never Before</h1>
-            <p>Your complete guide to sending money, splitting bills, and managing payments with confidence. Learn through interactive tutorials and step-by-step guides.</p>
-            <a href="#videos" class="cta-button">Start Learning</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Millions Trust Venmo</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Instant Transfers</h3>
-                    <p>Send and receive money in seconds with just a few taps</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <h3>Social Payments</h3>
-                    <p>Share payments with friends and add fun emojis</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Bank-Level Security</h3>
-                    <p>Encryption and fraud protection keep your money safe</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-receipt"></i>
-                    </div>
-                    <h3>Bill Splitting</h3>
-                    <p>Easily split expenses with roommates or friends</p>
-                </div>
+            <h1>How can we help you today?</h1>
+            <p>Find answers to your Venmo questions or contact our support team directly.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search help articles...">
+                <button><i class="fas fa-search"></i> Search</button>
             </div>
         </div>
     </section>
 
-    <!-- Video Carousel Section -->
-    <section class="video-section" id="videos">
+    <!-- Call Support Section -->
+    <section class="call-support">
         <div class="container">
-            <div class="section-title">
-                <h2>Video Tutorials</h2>
-            </div>
-            <div class="carousel">
-                <button class="carousel-control prev" onclick="moveSlide(-1)">❮</button>
-                <div class="carousel-inner">
-                    <div class="video-card">
-                        <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/V9VJ5wLSQPs?si=xnU6pq3s146ePoL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Getting Started with Venmo</h3>
-                            <p>Learn how to create your account and make your first payment</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/CcnsWAZKS1A?si=8YG-xFaQuGvHzPDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Splitting Bills Made Easy</h3>
-                            <p>How to fairly split expenses with friends and roommates</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sPI71vOSo9I?si=do9NSr851Bx6K-5h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Venmo Security Features</h3>
-                            <p>Protect your account with these essential security tips</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <<iframe width="560" height="315" src="https://www.youtube.com/embed/ivXqYkNPn1w?si=gSKE4ou7L2EBe5oX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Using Venmo for Small Business</h3>
-                            <p>Accept payments for your side hustle or small business</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <<iframe width="560" height="315" src="https://www.youtube.com/embed/_FS70viQhIA?si=rAz9puGP6TaZmgAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Venmo Debit Card Explained</h3>
-                            <p>How to get and use the Venmo debit card for purchases</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/91HXxGbS7tU?si=fJiNYl__vGJ_WDh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Managing Your Venmo Balance</h3>
-                            <p>How to add money, transfer to bank, and track spending</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <<iframe width="560" height="315" src="https://www.youtube.com/embed/he725jZrgic?si=C2vKvpoJRAjRo7_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Venmo Privacy Settings</h3>
-                            <p>Control who sees your transactions and personal info</p>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-container">
-                            <<iframe width="560" height="315" src="https://www.youtube.com/embed/FJhw9qx5tIE?si=wgnDATwmimwQWXgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
-                        <div class="video-info">
-                            <h3>Venmo Rewards Program</h3>
-                            <p>Earn cash back with the Venmo credit card</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control next" onclick="moveSlide(1)">❯</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(0)"></span>
-                    <span class="indicator" onclick="goToSlide(1)"></span>
-                    <span class="indicator" onclick="goToSlide(2)"></span>
-                    <span class="indicator" onclick="goToSlide(3)"></span>
-                    <span class="indicator" onclick="goToSlide(4)"></span>
-                    <span class="indicator" onclick="goToSlide(5)"></span>
-                    <span class="indicator" onclick="goToSlide(6)"></span>
-                    <span class="indicator" onclick="goToSlide(7)"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guides Section -->
-    <section class="guides" id="guides">
-        <div class="container">
-            <div class="section-title">
-                <h2>Step-by-Step Guides</h2>
-            </div>
-            <div class="guide-card">
-                <div class="guide-image" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
-                <div class="guide-content">
-                    <h3>How to Set Up Your Venmo Account</h3>
-                    <p>Complete guide to creating and verifying your Venmo account</p>
-                    <div class="guide-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">Download the Venmo app from the App Store or Google Play</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">Sign up with your email, phone number, or Facebook account</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <div class="step-content">Verify your email address and phone number</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <div class="step-content">Add and verify your bank account or debit card</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">5</div>
-                            <div class="step-content">Set up your security features (PIN, fingerprint, etc.)</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="guide-card">
-                <div class="guide-image" style="background-image: url('https://images.unsplash.com/photo-1604594849809-dfeddd911531?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
-                <div class="guide-content">
-                    <h3>How to Request Money on Venmo</h3>
-                    <p>Never hesitate to ask for what you're owed with these simple steps</p>
-                    <div class="guide-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">Open the Venmo app and tap the "Pay or Request" button</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">Enter the username, phone, or email of the person you're requesting from</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <div class="step-content">Enter the amount you're requesting</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <div class="step-content">Add a note explaining what the request is for</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">5</div>
-                            <div class="step-content">Choose whether to make the request private or share with friends</div>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">6</div>
-                            <div class="step-content">Tap "Request" to send your money request</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">How do I link my bank account to Venmo?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>To link your bank account: Go to "Settings" → "Payment Methods" → "Add Bank or Card." You can verify instantly with your online banking credentials or manually with your account and routing numbers. Manual verification may take 1-3 business days.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Why is my Venmo payment pending?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Payments may show as pending when: (1) The recipient hasn't accepted the payment yet, (2) You're sending to a new recipient who needs to verify their account, (3) There's a security review in progress, or (4) For bank transfers, it takes 1-3 business days to process.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Is Venmo safe to use?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Yes, Venmo uses bank-level encryption and security measures including: data encryption, fraud monitoring, optional PIN protection, and multi-factor authentication. However, only use Venmo with people you trust, as payments can't typically be reversed.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">What are Venmo's fees?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Venmo is free for most personal transactions when using your Venmo balance, bank account, or debit card. There's a 3% fee for credit card payments. Instant transfers to your bank have a 1.75% fee (min $0.25, max $25), while standard transfers are free but take 1-3 business days.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How do I split a bill on Venmo?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>To split a bill: (1) Tap "Pay or Request" → "Split," (2) Select friends to split with, (3) Enter the total amount, (4) Venmo will calculate equal shares (or you can adjust amounts), (5) Add a note (like "Dinner bill"), (6) Tap "Split" to send requests.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Can I use Venmo for business transactions?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Yes, but you need a Venmo business profile. Personal accounts shouldn't be used for business. Business profiles have a 1.9% + $0.10 fee per transaction. To set one up: Go to "Settings" → "Business Profile" and follow the prompts to register.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">What's the difference between Venmo balance and bank transfers?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Your Venmo balance is money stored in your Venmo account that you can send immediately. Bank transfers move money between your Venmo balance and your bank account. Standard transfers are free (1-3 business days), while instant transfers have a small fee (minutes to hours).</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How do I increase my Venmo sending limit?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>To increase your weekly rolling limit beyond $299.99: (1) Verify your identity by providing your legal name, address, date of birth, and SSN (or ITIN), (2) This increases your limit to $4,999.99 per week. Business profiles have different limits.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">What should I do if I sent money to the wrong person?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Immediately: (1) Ask the recipient to refund the payment, (2) If they don't respond, contact Venmo support through the app, (3) For unauthorized transactions, report it within 60 days. Note: Venmo can't guarantee refunds for mistaken payments, so always double-check recipient details.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Can I use Venmo internationally?<i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Venmo currently only works within the U.S. with U.S. bank accounts and phone numbers. While you can access the app abroad, both sender and recipient must have U.S. accounts. The Venmo debit card also only works for U.S. dollar transactions.</p>
-                    </div>
-                </div>
-            </div>
+            <h3>Need Immediate Assistance?</h3>
+            <p>Call our support team for immediate help.</p>
+            <a href="tel:+18889859070" class="contact-link">(888) 985-9070</a>
         </div>
     </section>
 
@@ -898,32 +484,128 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Need More Help?</h2>
+                <h2>Contact Venmo Support</h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-comment-alt"></i>
                     </div>
-                    <h3>Venmo Support</h3>
-                    <p>Get official help from Venmo's customer service team</p>
-                    <a href="https://help.venmo.com/hc/en-us" class="contact-link" target="_blank">Visit Support Center</a>
+                    <h3>Help Center</h3>
+                    <p>Browse our comprehensive help articles</p>
+                    <a href="https://help.venmo.com" class="contact-link" target="_blank">Visit Help Center</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3>Email Us</h3>
-                    <p>Have feedback or questions about this tutorial hub?</p>
-                    <a href="mailto:support@venmohub.com" class="contact-link">support@venmohub.com</a>
+                    <h3>Email Support</h3>
+                    <p>Get help via email (response within 24 hours)</p>
+                    <a href="mailto:support@venmo.com" class="contact-link">Email Us</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3>Report an Issue</h3>
-                    <p>Found a problem with a tutorial or have a correction?</p>
-                    <a href="mailto:report@venmohub.com" class="contact-link">report@venmohub.com</a>
+                    <h3>Phone Support</h3>
+                    <p>Call our support team (available 6am-10pm CT)</p>
+                    <a href="tel:+18889859070" class="contact-link">(888) 985-9070</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Help Section -->
+    <section class="quick-help" id="quick-help">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quick Help</h2>
+            </div>
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Account Setup</h3>
+                    <p>How to create and verify your Venmo account</p>
+                    <a href="#" class="topic-link">Get Started →</a>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Sending Money</h3>
+                    <p>Learn how to send payments to friends and family</p>
+                    <a href="#" class="topic-link">Learn More →</a>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Bank Linking</h3>
+                    <p>Add and verify your bank account or card</p>
+                    <a href="#" class="topic-link">View Guide →</a>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Protect your account and transactions</p>
+                    <a href="#" class="topic-link">Security Tips →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Topics Section -->
+    <section class="topics" id="topics">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Topics</h2>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Pending Payments</h3>
+                        <p>Why your Venmo payment might be pending and how to resolve it</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Instant Transfers</h3>
+                        <p>How to transfer money to your bank instantly (for a small fee)</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Venmo Debit Card</h3>
+                        <p>Everything about ordering and using your Venmo debit card</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Business Profiles</h3>
+                        <p>How to set up and use Venmo for your small business</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Transaction Disputes</h3>
+                        <p>What to do if you didn't authorize a Venmo payment</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-content">
+                        <h3>Privacy Settings</h3>
+                        <p>Control who sees your transactions and personal information</p>
+                        <a href="#" class="topic-link">Read Article →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -934,87 +616,60 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h3>Venmo Tutorial Hub</h3>
-                    <p>Your complete guide to mastering Venmo payments and features.</p>
+                    <h3>Venmo Support</h3>
+                    <p>Your trusted resource for all Venmo help and support.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Help Topics</h3>
                     <ul class="footer-links">
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#videos">Tutorials</a></li>
-                        <li><a href="#guides">Guides</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Sending & Receiving</a></li>
+                        <li><a href="#">Account Security</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                        <li><a href="#">Business Profiles</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Legal</h3>
+                    <h3>Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Fee Schedule</a></li>
+                        <li><a href="#">User  Agreement</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Download Venmo</h3>
-                    <div class="download-buttons">
-                        <a href="https://apps.apple.com/us/app/venmo/id351727428" style="display: inline-block; margin-bottom: 10px;"><img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" height="40"></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.venmo"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="60"></a>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://apps.apple.com/us/app/venmo/id351727428" target="_blank">
+                            <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.venmo" target="_blank">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height: 60px;">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2024 Venmo Tutorial Hub. This is an unofficial guide not affiliated with Venmo or PayPal.</p>
-                <p>All product names, logos, and brands are property of their respective owners.</p>
+                <p>© 2024 Venmo, a service of PayPal, Inc. All rights reserved.</p>
+                <p>Venmo is a registered trademark of PayPal, Inc.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Carousel Functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.video-card');
-        const indicators = document.querySelectorAll('.indicator');
-        
-        function updateCarousel() {
-            const carouselInner = document.querySelector('.carousel-inner');
-            carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active', index === currentSlide);
-            });
-        }
-        
-        function moveSlide(direction) {
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            updateCarousel();
-        }
-        
-        function goToSlide(index) {
-            currentSlide = index;
-            updateCarousel();
-        }
-        
-        // Auto-advance carousel every 5 seconds
-        setInterval(() => moveSlide(1), 5000);
-        
-        // FAQ Toggle Functionality
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const answer = button.nextElementSibling;
-                button.classList.toggle('active');
-                answer.classList.toggle('active');
-            });
+        // Search functionality
+        document.querySelector('.search-bar button').addEventListener('click', function() {
+            const query = document.querySelector('.search-bar input').value;
+            alert(`Searching for: "${query}"\n(In a real implementation, this would search the help articles)`);
         });
-        
-        // Smooth Scrolling for Anchor Links
+
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1023,10 +678,10 @@
                 });
             });
         });
-        
-        // Animation on Scroll
+
+        // Animation on scroll
         const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.feature-card, .guide-card, .contact-card');
+            const elements = document.querySelectorAll('.help-card, .topic-card, .contact-card');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1038,14 +693,14 @@
                 }
             });
         };
-        
+
         // Set initial state for animated elements
-        document.querySelectorAll('.feature-card, .guide-card, .contact-card').forEach(element => {
+        document.querySelectorAll('.help-card, .topic-card, .contact-card').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
-        
+
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
     </script>
